@@ -31,21 +31,15 @@ class Dog extends Animal{
     }
 
     dogCommand(command){
-        switch(command){
-            case 'Sit':
-                console.log(`${this.name} is sitting`);
-                break;
-            case 'GivePaw':
-                console.log(`${this.name} is giving a paw`);
-                break;
-            case 'Howl':
-                console.log(`${this.name} is howls`);
-                break;
-            default:
-                console.log("Unknown command!");
-                break;
-        }
-    }  
+       const dogCommands = new Map([
+            ['Sit', `${this.name} is sitting`],
+            ['GivePaw', `${this.name} is giving a paw`],
+            ['Howl',  `${this.name} is howling`],
+            ['Voice',  `${this.name} is voicing`]
+          ]);
+
+        console.log(dogCommands.has(command) ? dogCommands.get(command) : "Unknown command!");
+    }
 }
 
 class Rabbit extends Animal{
