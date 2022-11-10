@@ -1,0 +1,43 @@
+p.b {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.center {
+    border: 5px solid #FFFF00;
+    text-align: center;
+    }
+
+.content {
+    bottom: center;
+    right: center;
+    background-color: black;
+    color: white;
+    padding-left: center;
+    padding-right: center;
+  }
+.user {
+    text-align: center;
+      display: inline-block;
+      margin: 20px;
+  }
+.user img {
+    text-align: center;
+      width: 150px;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+h2 {
+    text-align: center;
+      font-size: 16px;
+      color: #546E7A;
+      letter-spacing: 2px;
+      color: yellow;
+  }
+h1 {
+    text-align: center;
+      margin: 30px 0 50px;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 4px;
+      color: yellow;
+  }
